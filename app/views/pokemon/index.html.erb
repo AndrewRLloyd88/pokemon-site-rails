@@ -10,7 +10,7 @@
           <div class="mx-auto mt-5" style="width: 400px">
           <div class="form-group">
             <%= label_tag :number, 'Search for a Pokemon by Number '%>
-            <%= text_field_tag :number, nil, placeholder: 'Eg. 1', class: 'form-control' %>
+            <%= text_field_tag :number, nil, placeholder: 'Eg. 1', class: 'form-control', required: true, type: 'number' %>
             
           </div>
           <%= button_tag 'Search', class: 'btn btn-success btn-block' %>

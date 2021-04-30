@@ -10,7 +10,7 @@ class PokemonController < ApplicationController
       return render action: :index
     end
 
-    @pokemon_name = pokemon["name"]
+    @pokemon_name = pokemon["name"].capitalize()
   end
 
 
